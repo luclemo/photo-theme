@@ -1,8 +1,18 @@
-<footer>
-  <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
-  </div>
-</footer>
+  <header>
+    <div class="container clearfix">
+      <h1>
+        <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
+          <?php bloginfo( 'name' ); ?>
+        </a>
+      </h1>
+      <nav>
+	      <?php wp_nav_menu( array(
+	        'container' => false,
+	        'theme_locations' => 'primary'
+	      )); ?>
+      </nav>
+    </div> <!-- /.container -->
+  </header><!--/.header-->
 
 <script>
 /* Google Analytics! */

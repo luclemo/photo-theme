@@ -9,25 +9,11 @@
 
   <?php // Load our CSS ?>
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+  <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,600|Hind:400,300,600' rel='stylesheet' type='text/css'>
 
   <?php wp_head(); ?>
 </head>
 
 
 <body <?php body_class(); ?>>
-
-<header>
-  <div class="container">
-    <h1>
-      <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
-        <?php bloginfo( 'name' ); ?>
-      </a>
-    </h1>
-
-    <?php wp_nav_menu( array(
-      'container' => false,
-      'theme_locations' => 'primary'
-    )); ?>
-  </div> <!-- /.container -->
-</header><!--/.header-->
 
