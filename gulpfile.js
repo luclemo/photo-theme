@@ -5,10 +5,12 @@ var gulp = require('gulp');
 var stylus = require('gulp-stylus');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
+var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('styles', function(){
 	gulp.src('wp-content/themes/phototheme/stylus/style.styl')
 	.pipe(stylus())
+	.pipe(autoprefixer())
 	.pipe(gulp.dest('wp-content/themes/phototheme/'))
 	.pipe(reload({ stream : true }))
 });
@@ -18,6 +20,7 @@ gulp.task('browser-sync', function(){
 			proxy: 'localhost:8888'
 		})
 });
+
 
 gulp.task('watch', ['browser-sync'], function(){
 	gulp.watch('wp-content/themes/phototheme/stylus/*.styl', ['styles']);
