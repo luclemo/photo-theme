@@ -14,8 +14,12 @@ Author URI: http://hackeryou.com
 // Variables & Mixins
 // ==========================================================
 
-$display = 'Dosis', sans-serif;
-$body = 'Hind', sans-serif;
+$display = 'Dosis' sans-serif
+$body = 'Hind' sans-serif
+
+// ==========================================================
+// Default Styling
+// ==========================================================
 
 /* Global Classes / Wordpress Specific */
 .aligncenter    { text-align: center; margin: 0 auto; }
@@ -25,12 +29,16 @@ img.alignleft     { padding-right: 5px;}
 img.alignright    { padding-left: 5px; }
 .clear        { width:100%; float:left; clear:both;}
 
-// ==========================================================
-// Default Styling
-// ==========================================================
+html
+	font-size 10px
+	-webkit-font-smoothing antialiased
+	
 body
 	color #333
 	font-family $body
+	font-size 1.6rem
+	line-height 1.65
+	font-weight 400
 
 .container
 	max-width 1200px
@@ -49,9 +57,6 @@ a
 	text-decoration none
 	&:hover
 		color #D424B1
-
-p
-	line-height 1.5
 	
 img {
   max-width:100%;
@@ -88,6 +93,31 @@ pre
 	padding 10px
 	border-radius 4px
 	border 1px solid #ccc
+	
+// ==========================================================
+// Typography
+// ==========================================================	
+h1
+h2
+h3
+h4
+	font-family $display
+	text-transform uppercase
+	font-weight 300
+
+h1
+	font-size 4.2rem
+	
+h2
+	font-size 3.6rem
+	
+h3
+	font-size 3rem
+	
+h4
+	font-size 2.8rem
+	
+
 
 // ==========================================================
 // Sidebar
@@ -111,6 +141,7 @@ header
 	h1
 		display inline-block
 		float left
+		text-transform uppercase
 
 // ==========================================================
 // Navigation
