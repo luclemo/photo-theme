@@ -193,6 +193,7 @@ img.alignright {
 }
 body {
   color: #333;
+  font-family: 'Hind', sans-serif;
 }
 .container {
   max-width: 1200px;
@@ -262,37 +263,53 @@ pre {
 .sidebar ul li {
   list-style: none;
 }
-footer {
+header {
   clear: both;
+  background: #daa520;
+}
+header h1 {
+  display: inline-block;
+  float: left;
+}
+nav {
+  display: inline-block;
+  float: left;
 }
 ul.menu {
   margin: 0;
   padding: 0;
 }
 ul.menu li {
-  display: inline;
+  display: inline-block;
   margin-right: 10px;
+  padding: 0;
 }
 ul.menu li a {
   color: #333;
   padding: 10px;
   background: #333;
   color: #fff;
+  display: block;
 }
+footer .navigation,
 #comments .navigation {
   padding: 0 0 18px;
 }
+footer .comment-body p:last-child,
 #comments .comment-body p:last-child {
   margin-bottom: 6px;
 }
+footer .comment-body blockquote p:last-child,
 #comments .comment-body blockquote p:last-child {
   margin-bottom: 24px;
 }
+footer .pingback,
 #comments .pingback {
   margin-bottom: 18px;
   padding-bottom: 18px;
   border-bottom: 1px solid #e7e7e7;
 }
+footer .pingback p,
 #comments .pingback p {
   color: #888;
   font-size: 12px;
@@ -300,6 +317,7 @@ ul.menu li a {
   display: block;
   margin: 0;
 }
+footer .pingback .url,
 #comments .pingback .url {
   font-style: italic;
   font-size: 13px;

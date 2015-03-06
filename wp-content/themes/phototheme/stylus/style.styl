@@ -9,6 +9,14 @@ Author URI: http://hackeryou.com
 
 @import "reset"
 
+
+// ==========================================================
+// Variables & Mixins
+// ==========================================================
+
+$display = 'Dosis', sans-serif;
+$body = 'Hind', sans-serif;
+
 /* Global Classes / Wordpress Specific */
 .aligncenter    { text-align: center; margin: 0 auto; }
 .alignleft      { float: left; }
@@ -22,6 +30,7 @@ img.alignright    { padding-left: 5px; }
 // ==========================================================
 body
 	color #333
+	font-family $body
 
 .container
 	max-width 1200px
@@ -93,26 +102,43 @@ pre
 			list-style none
 
 // ==========================================================
-// Footer
+// Header
 // ==========================================================
-footer
+header
 	clear both
+	background goldenrod
+	
+	h1
+		display inline-block
+		float left
 
 // ==========================================================
 // Navigation
 // ==========================================================
+nav
+	display inline-block
+	float left
+	
 ul
 	&.menu
 		margin 0
 		padding 0
 		li
-			display inline
+			display inline-block
 			margin-right 10px
+			padding 0
 			a
 				color #333
 				padding 10px
 				background #333
 				color white
+				display block
+
+// ==========================================================
+// Footer
+// ==========================================================
+footer
+
 
 // ==========================================================
 // Comments

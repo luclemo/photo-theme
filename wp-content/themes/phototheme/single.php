@@ -36,9 +36,9 @@
 
       <?php endwhile; // end of the loop. ?>
 
-    </div> <!-- /.content -->
+    </div> <!-- End .content -->
 
-    <?php get_sidebar(); ?>
+    <?php //get_sidebar(); ?>
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->
