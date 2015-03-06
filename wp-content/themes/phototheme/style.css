@@ -285,16 +285,22 @@ h4 {
 }
 header {
   clear: both;
-  background: #daa520;
+  background: #000;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 2rem 0;
 }
 header h1 {
   display: inline-block;
   float: left;
   text-transform: uppercase;
+  margin: 0 50px 0 0;
+  line-height: 1;
 }
 nav {
   display: inline-block;
-  float: left;
 }
 ul.menu {
   margin: 0;
@@ -311,6 +317,7 @@ ul.menu li a {
   background: #333;
   color: #fff;
   display: block;
+  line-height: 1;
 }
 footer .navigation,
 #comments .navigation {

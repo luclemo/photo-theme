@@ -136,20 +136,25 @@ h4
 // ==========================================================
 header
 	clear both
-	background goldenrod
+	background rgba(0,0,0,1)
+	position fixed
+	width 100%
+	bottom 0
+	left 0
+	padding 2rem 0
+	// z-index 10
 	
 	h1
 		display inline-block
 		float left
 		text-transform uppercase
+		margin 0 50px 0 0
+		line-height 1
 
-// ==========================================================
 // Navigation
-// ==========================================================
+// ----------------------------------------
 nav
 	display inline-block
-	float left
-	
 ul
 	&.menu
 		margin 0
@@ -164,6 +169,7 @@ ul
 				background #333
 				color white
 				display block
+				line-height 1
 
 // ==========================================================
 // Footer
