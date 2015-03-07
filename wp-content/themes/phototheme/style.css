@@ -197,6 +197,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.65;
   font-weight: 400;
+  padding-bottom: 82px;
 }
 .container {
   max-width: 1200px;
@@ -211,11 +212,11 @@ body {
   width: 100%;
 }
 a {
-  color: #ba209b;
+  color: #8e5e41;
   text-decoration: none;
 }
 a:hover {
-  color: #d424b1;
+  color: rgba(142,94,65,0.8);
 }
 img {
   max-width: 100%;
@@ -262,6 +263,8 @@ h4 {
 }
 h1 {
   font-size: 4.2rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
 }
 h2 {
   font-size: 3.6rem;
@@ -285,7 +288,7 @@ h4 {
 }
 header {
   clear: both;
-  background: #000;
+  background: #333;
   position: fixed;
   width: 100%;
   bottom: 0;
@@ -293,6 +296,8 @@ header {
   padding: 2rem 0;
 }
 header h1 {
+  font-size: 4.2rem;
+  font-weight: 300;
   display: inline-block;
   float: left;
   text-transform: uppercase;
@@ -504,4 +509,10 @@ a.comment-edit-link:hover {
 #respond p,
 #comments-list ul #respond {
   margin: 0;
+}
+.blog {
+  text-align: center;
+}
+.blog h2 {
+  font-size: 6rem;
 }

@@ -39,6 +39,7 @@ body
 	font-size 1.6rem
 	line-height 1.65
 	font-weight 400
+	padding-bottom 82px
 
 .container
 	max-width 1200px
@@ -53,10 +54,10 @@ body
 	width 100%
 
 a
-	color #BA209B
+	color rgba(142, 94, 65, 1)
 	text-decoration none
 	&:hover
-		color #D424B1
+		color rgba(142, 94, 65, 0.8)
 	
 img {
   max-width:100%;
@@ -107,6 +108,8 @@ h4
 
 h1
 	font-size 4.2rem
+	letter-spacing 0.1rem
+	font-weight 600
 	
 h2
 	font-size 3.6rem
@@ -136,15 +139,16 @@ h4
 // ==========================================================
 header
 	clear both
-	background rgba(0,0,0,1)
+	background rgba(51, 51, 51, 1.0)
 	position fixed
 	width 100%
 	bottom 0
 	left 0
-	padding 2rem 0
-	// z-index 10
-	
+	padding 2rem 0			
+
 	h1
+		font-size 4.2rem
+		font-weight 300
 		display inline-block
 		float left
 		text-transform uppercase
@@ -338,3 +342,13 @@ p.form-allowed-tags, .nocomments
 
 #respond p, #comments-list ul #respond
 	margin 0
+
+// ==========================================================
+// Blog
+// ==========================================================
+
+.blog
+	text-align center
+	
+	h2
+		font-size 6rem
