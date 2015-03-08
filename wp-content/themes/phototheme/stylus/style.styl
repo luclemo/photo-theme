@@ -14,8 +14,12 @@ Author URI: http://hackeryou.com
 // Variables & Mixins
 // ==========================================================
 
+// Type -------------------------
 $display = 'Dosis' sans-serif
 $body = 'Hind' sans-serif
+
+// Colours ----------------------
+$main = rgba(142, 94, 65, 1)
 
 // ==========================================================
 // Default Styling
@@ -44,6 +48,10 @@ body
 .container
 	max-width 1200px
 	margin 0 auto
+	
+.nav-container
+	max-width 1400px
+	margin 0 auto
 
 .content
 	float left
@@ -54,10 +62,10 @@ body
 	width 100%
 
 a
-	color rgba(142, 94, 65, 1)
+	color $main
 	text-decoration none
 	&:hover
-		color rgba(142, 94, 65, 0.8)
+		color lighten($main, 20%)
 	
 img {
   max-width:100%;
@@ -139,15 +147,16 @@ h4
 // ==========================================================
 header
 	clear both
-	background rgba(51, 51, 51, 1.0)
+	background rgba(222, 222, 222, 1)
 	position fixed
 	width 100%
 	bottom 0
 	left 0
-	padding 2rem 0			
+	padding 2rem 0
+	max-height 8vh	
 
 	h1
-		font-size 4.2rem
+		font-size 3.6rem
 		font-weight 300
 		display inline-block
 		float left
@@ -168,10 +177,8 @@ ul
 			margin-right 10px
 			padding 0
 			a
-				color #333
+				color $main
 				padding 10px
-				background #333
-				color white
 				display block
 				line-height 1
 
@@ -347,8 +354,24 @@ p.form-allowed-tags, .nocomments
 // Blog
 // ==========================================================
 
-.blog
+.blog main
 	text-align center
 	
 	h2
 		font-size 6rem
+		
+// ==========================================================
+// Gallery
+// ==========================================================
+.gallery
+	position relative
+	// top 50%
+	// transform translate(-50%,-50%)
+	height 92vh
+	
+	img
+		position absolute
+		top 50%
+		left 50%
+		transform translate(-50%, -50%)
+		max-height 90%
