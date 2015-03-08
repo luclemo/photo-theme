@@ -1,6 +1,6 @@
 <?php //index.php is the last resort template, if no other templates match ?>
 <?php get_header(); ?>
-<div class="main">
+<main>
 	<div class="container">
 		<h1><?php echo get_the_title(4); ?></h1>
 	</div>
@@ -12,6 +12,6 @@
     <!-- </div> --> <!-- End .content --> 
 
   <!-- </div> --> <!-- /.container -->
-</div> <!-- /.main -->
+</main><!-- End main --> 
 
 <?php get_footer(); ?>

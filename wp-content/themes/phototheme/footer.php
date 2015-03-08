@@ -1,5 +1,5 @@
   <header>
-    <div class="container clearfix">
+    <div class="nav-container clearfix">
       <h1>
         <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
           <?php bloginfo( 'name' ); ?>

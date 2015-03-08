@@ -1,16 +1,17 @@
 <?php get_header(); ?>
 
-<div class="main">
-  <div class="container">
-  YOYOY
+<main>
+  <!-- <div class="container"> -->
 
-    <!-- <div class="content"> -->
-    		<?php //get_template_part( 'loop', 'index' );	?>
-    <!-- </div> /.content  -->
+    <div class="full">
+    	<div class="gallery">
+    		<img src="http://localhost:3000/phototheme/wp-content/themes/phototheme/gallery-images/LUC_070717_2641_Master-1158x1440.jpg">
+  		</div>
+    </div> <!-- end .full --> 
 
     <?php //get_sidebar(); ?>
 
-  </div> <!-- /.container -->
-</div> <!-- /.main -->
+  <!-- </div> --> <!-- /.container -->
+</main><!-- End main --> 
 
 <?php get_footer(); ?>
