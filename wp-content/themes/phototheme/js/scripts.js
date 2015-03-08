@@ -1,3 +1,9 @@
-$(function(){
-	//your jQuery here
+$(function() {	
+	// Uncomment your chosen color option
+	$().layoutScout({
+ 		// color: 'lightColours'
+ 		color: 'darkColours'
+ 		// color: 'lightMono'
+ 		// color: 'darkMono'
+ 	});
 });
