@@ -17,27 +17,25 @@
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<div class="container">
+				
+				<header class="entry-header">
+					<p><date><?php the_date() ?></date></p>
+				</header><!-- End .entry-header -->
+				
 				<h2 class="entry-title">
 	        <a href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark">
 	          <?php the_title(); ?>
 	        </a>
 	      </h2>
 
-				<section class="entry-content">
-					<?php //the_excerpt(); ?>
-					<?php the_date() ?>
-					<?php //the_content('Continue reading <span class="meta-nav">&rarr;</span>'); ?>
-					<?php wp_link_pages( array(
-	          'before' => '<div class="page-link"> Pages:',
-	          'after' => '</div>'
-	        )); ?>
-				</section><!-- .entry-content -->
+ 				<section class="entry-content">
+					<?php the_excerpt('Continue reading <span class="meta-nav">&rarr;</span>'); ?>
+				</section> -->.entry-content
 
-				<footer>
+				<footer class="entry-footer">
+					<date><?php the_date() ?></date>
 					<p><?php the_tags('Tags: ', ', ', '<br>'); ?> Posted in <?php the_category(', '); ?></p>
-	        <p><?php comments_popup_link('Respond to this post &raquo;', '1 Response &raquo;', '% Responses &raquo;'); ?></p>
-	        <p><?php edit_post_link( 'Edit', '<span class="edit-link">', '</span>' ); ?></p>
-				</footer>
+				</footer><!-- End .entry-footer -->
 			</div> <!-- end .container -->
 		</article><!-- #post-## -->
 
