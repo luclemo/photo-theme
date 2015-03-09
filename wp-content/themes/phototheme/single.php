@@ -6,12 +6,15 @@
     <!-- <div class="content"> -->
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-        <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-          <h1 class="entry-title"><?php the_title(); ?></h1>
+        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-          <div class="entry-meta">
-            <?php hackeryou_posted_on(); ?>
-          </div><!-- .entry-meta -->
+          <header class="entry-header">
+            <h1 class="entry-title"><?php the_title(); ?></h1>
+
+            <div class="entry-meta">
+              <?php hackeryou_posted_on(); ?>
+            </div><!-- .entry-meta -->
+          </header><!-- End .entry-header -->
 
           <div class="entry-content">
             <?php the_content(); ?>
@@ -21,11 +24,11 @@
             )); ?>
           </div><!-- .entry-content -->
 
-          <div class="entry-utility">
+          <footer class="entry-footer">
             <?php hackeryou_posted_in(); ?>
             <?php edit_post_link( 'Edit', '<span class="edit-link">', '</span>' ); ?>
-          </div><!-- .entry-utility -->
-        </div><!-- #post-## -->
+          </footer><!-- .entry-footer -->
+        </article><!-- #post-## -->
 
         <div id="nav-below" class="navigation">
           <p class="nav-previous"><?php previous_post_link('%link', '&larr; %title'); ?></p>

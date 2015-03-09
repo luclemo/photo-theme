@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 <main>
 	<div class="container">
-		<h1><?php echo get_the_title(4); ?></h1>
+		<h1 class="page-title"><?php echo get_the_title(4); ?></h1>
 	</div>
 
   <!-- <div class="container"> -->

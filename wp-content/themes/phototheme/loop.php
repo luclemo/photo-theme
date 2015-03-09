@@ -19,23 +19,28 @@
 			<div class="container">
 				
 				<header class="entry-header">
-					<p><date><?php the_date() ?></date></p>
+					<div class="entry-meta">
+						<date><?php echo get_the_date() ?></date>
+					</div><!-- End .entry-meta -->
+					<h2 class="entry-title">
+		        <a href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark">
+		          <?php the_title(); ?>
+		        </a>
+		      </h2>
 				</header><!-- End .entry-header -->
 				
-				<h2 class="entry-title">
-	        <a href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark">
-	          <?php the_title(); ?>
-	        </a>
-	      </h2>
+				<footer class="entry-footer">
+					<p><?php the_category(' // '); ?></p>
+				</footer><!-- End .entry-footer -->
 
  				<section class="entry-content">
-					<?php the_excerpt('Continue reading <span class="meta-nav">&rarr;</span>'); ?>
-				</section> -->.entry-content
+	 				<?php if ( ! has_excerpt() ) {
+	 				      echo '';
+	 				} else { 
+	 				      the_excerpt();
+	 				}?>
+				</section><!-- End.entry-content -->
 
-				<footer class="entry-footer">
-					<date><?php the_date() ?></date>
-					<p><?php the_tags('Tags: ', ', ', '<br>'); ?> Posted in <?php the_category(', '); ?></p>
-				</footer><!-- End .entry-footer -->
 			</div> <!-- end .container -->
 		</article><!-- #post-## -->
 

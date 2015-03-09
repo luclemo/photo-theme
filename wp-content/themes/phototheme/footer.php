@@ -1,4 +1,4 @@
-  <header>
+  <header class="main-header">
     <div class="nav-container clearfix">
       <h1>
         <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
