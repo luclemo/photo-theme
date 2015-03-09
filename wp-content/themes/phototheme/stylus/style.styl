@@ -20,7 +20,7 @@ $body = 'Hind' sans-serif
 
 // Colours ----------------------
 $main = rgba(142, 94, 65, 1)
-$text = rgba(96, 96, 96, 1.0)
+$text = rgba(113, 113, 113, 1.0)
 
 
 // ==========================================================
@@ -70,7 +70,7 @@ a
 		color lighten($main, 20%)
 	
 img {
-  max-width:100%;
+	max-width:100%;
 }
 
 blockquote
@@ -98,6 +98,7 @@ dd
 
 ul li,ol li
 	padding 3px
+	font-size 2rem
 
 pre
 	background #F7F7F7
@@ -117,18 +118,17 @@ h4
 	font-weight 300
 
 h1
-	font-size 4.2rem
+	font-size 5rem
 	letter-spacing 0.1rem
-	font-weight 600
 	
 h2
-	font-size 3.6rem
+	font-size 4rem
 	
 h3
-	font-size 3rem
+	font-size 3.4rem
 	
 h4
-	font-size 2.8rem
+	font-size 3rem
 	
 p
 	font-size: 2.2rem;
@@ -220,12 +220,18 @@ footer
 		.url
 			font-style italic
 			font-size 13px
+	.comment-form-comment textarea
+		border 1px solid rgba(142, 94, 65, 0.34)
+		background rgba(142, 94, 65, 0.12)
+		padding 3rem
 
-h3#comments-title, h3#reply-title
-	color #000000
-	font-weight 700
-	font-size 20px
-	margin-bottom 0
+
+h3#comments-title,
+h3#reply-title
+	color lighten($text, 30%)
+	// font-weight 700
+	// font-size 20px
+	// margin-bottom 0
 
 h3#comments-title
 	padding 24px 0
@@ -283,11 +289,18 @@ h3#comments-title
 	color #888888
 
 input[type=submit]
-	color #333333
+	color $main
+	padding 1rem
+	background transparent
+	border 1px solid rgb(187, 158, 141)
+	margin-top 2rem
+	// Figure out this hover!
+	&hover
+		background  rgb(187, 158, 141)
 
 #respond
 	margin-top 24px
-	border-top 1px solid #e7e7e7
+	border-top 1px solid rgba(0,0,0,0.15)
 	overflow hidden
 	position relative
 	.comment-notes
@@ -300,7 +313,7 @@ input[type=submit]
 		font-size 12px
 	input
 		width 98%
-		margin 0 0 9px
+		// margin 0 0 9px
 	textarea
 		width 98%
 	dd
@@ -387,30 +400,34 @@ p.form-allowed-tags, .nocomments
 	
 
 .entry-header
-	text-align: center;
+	text-align center
 	
 .entry-meta
-	text-transform: uppercase;
-	font-size: 1.5rem;
-	letter-spacing: 1px;
+	text-transform uppercase
+	font-size 1.5rem
+	letter-spacing 1px
 
+.single-post .entry-footer
+	margin-top 5rem
+	padding-top 2rem
+	border-top 1px solid rgba(0,0,0,0.15)
 	
-.entry-footer p 
-	text-transform: uppercase;
-	font-family: 'Dosis' sans-serif;
-	font-weight: 600;
-	opacity: 0.7;
-	font-size: 1.6rem;
-	letter-spacing: 1px;
+.entry-footer p, p.logged-in-as
+	text-transform uppercase
+	font-family 'Dosis' sans-serif
+	font-weight 600
+	opacity 0.7
+	font-size 1.6rem
+	letter-spacing 1px
 
 .single-post .entry-header
-	padding-bottom: 5rem;
-	margin-bottom: 5rem;
+	padding-bottom 5rem
+	margin-bottom 5rem
 	
 .entry-title
-	font-size: 6rem;
-	font-weight: 300;
-	text-align: center;
+	font-size 6rem
+	font-weight 300
+	text-align center
 		
 // ==========================================================
 // Gallery

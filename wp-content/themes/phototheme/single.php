@@ -25,15 +25,11 @@
           </div><!-- .entry-content -->
 
           <footer class="entry-footer">
-            <?php hackeryou_posted_in(); ?>
-            <?php edit_post_link( 'Edit', '<span class="edit-link">', '</span>' ); ?>
+            <p>
+              <?php hackeryou_posted_in(); ?>
+            </p>
           </footer><!-- .entry-footer -->
         </article><!-- #post-## -->
-
-        <div id="nav-below" class="navigation">
-          <p class="nav-previous"><?php previous_post_link('%link', '&larr; %title'); ?></p>
-          <p class="nav-next"><?php next_post_link('%link', '%title &rarr;'); ?></p>
-        </div><!-- #nav-below -->
 
         <?php comments_template( '', true ); ?>
 
