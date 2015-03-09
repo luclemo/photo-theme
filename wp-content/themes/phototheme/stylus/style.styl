@@ -185,7 +185,7 @@ ul
 				color $main
 				padding 10px
 				display block
-				line-height 1
+				line-height 1.6
 
 // ==========================================================
 // Footer
@@ -444,3 +444,15 @@ p.form-allowed-tags, .nocomments
 		left 50%
 		transform translate(-50%, -50%)
 		max-height 90%
+
+// Gallery controls -------------------------------------
+	.back,
+	.forward
+		color lighten($text, 50%)
+		position absolute
+		top 50%
+		transform translateY(-50%)
+	.back
+		left: 50px
+	.forward
+		right: 50px

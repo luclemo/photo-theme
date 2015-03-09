@@ -329,7 +329,7 @@ ul.menu li a {
   color: #8e5e41;
   padding: 10px;
   display: block;
-  line-height: 1;
+  line-height: 1.6;
 }
 footer .navigation,
 #comments .navigation {
@@ -587,4 +587,19 @@ p.logged-in-as {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   max-height: 90%;
+}
+.back,
+.forward {
+  color: #b8b8b8;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.back {
+  left: 50px;
+}
+.forward {
+  right: 50px;
 }
